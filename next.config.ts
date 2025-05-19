@@ -1,10 +1,15 @@
 import type { NextConfig } from "next";
 
+const repoName = "create-resume"; // change this to your actual GitHub repo name
+
 const nextConfig: NextConfig = {
-  output: "export", // Required for `next export`
+  output: "export",
   images: {
-    unoptimized: true, // Required because image optimization doesn't work with static export
+    unoptimized: true,
   },
-  trailingSlash: true, // Optional: Helps avoid broken links when using `next export`
+  trailingSlash: true,
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
+
 export default nextConfig;
