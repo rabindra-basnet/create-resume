@@ -77,7 +77,7 @@ function LeftNavBar() {
             >
               <Image
                 src="/icon-rounded.png"
-                alt="Resume Revamp"
+                alt="Create a Resume"
                 width={40}
                 height={40}
               />

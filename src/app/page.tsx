@@ -33,7 +33,7 @@ export default function Home() {
       setPreviousVersion(extractedContent);
 
       // Call the revamp API
-      const response = await fetch('/api/revamp', {
+      const response = await fetch('/api/create-resume', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

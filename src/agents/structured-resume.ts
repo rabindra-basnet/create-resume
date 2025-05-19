@@ -23,7 +23,7 @@ export async function structuredResume(content: string) {
   return result;
 }
 
-export async function revampResume(
+export async function createResume(
   resume: Resume,
   message: string,
   jobUrl: string
