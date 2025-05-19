@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoName = "create-resume"; // change this to your actual GitHub repo name
+const repoName = "revamp-resume"; // change this to your actual GitHub repo name
 
 const nextConfig: NextConfig = {
   output: "export",

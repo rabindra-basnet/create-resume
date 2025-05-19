@@ -2,7 +2,7 @@ name: Deploy Next.js site to GitHub Pages
 
 on:
   push:
-    branches: ["develop"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -43,7 +43,7 @@ jobs:
       - name: Build and export Next.js app
         run: |
           pnpm next build
-          
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
